@@ -24,7 +24,7 @@ const Sidebar = () => {
   }, [])
 
   const projectData = () => {
-    axios.get('https://project-management-api-4mjg.onrender.com/projects/')
+    axios.get('http://localhost:3000/project/projects/')
       .then((res) => {
         setProjects(res.data)
       })
