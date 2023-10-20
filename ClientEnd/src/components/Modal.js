@@ -36,14 +36,14 @@ export default function Modal() {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                FACEBOOK
-                GITHUB
-                LINKEDIN
-                DISCORD
-                YOUTUBE
-
+                    <a href="https://www.facebook.com" className="mr-4">FACEBOOK</a>
+                    <a href="https://www.github.com" className="mr-4">GITHUB</a>
+                    <a href="https://www.linkedin.com" className="mr-4">LINKEDIN</a>
+                    <a href="https://www.discord.com" className="mr-4">DISCORD</a>
+                    <a href="https://www.youtube.com">YOUTUBE</a>
                   </p>
                 </div>
+
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
