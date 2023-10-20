@@ -12,13 +12,13 @@ const AddProjectModal = ({ isModalOpen, closeModal, edit = false, id = null }) =
 
     useEffect(() => {
         if (edit && isModalOpen) {
-            axios.get(`http://localhost:3000/project/${id}`)
+            axios.get(`http://localhost:9000/project/${id}`)
                 .then((res) => {
                     setTitle(res.data[0].title)
                     setDesc(res.data[0].description)
                 })
                 .catch((error) => {
-                    toast.error('Something went wrong')
+                    toast.error('Something went wrong in edit')
                 })
         }
     }, [isModalOpen]);
@@ -40,7 +40,7 @@ const AddProjectModal = ({ isModalOpen, closeModal, edit = false, id = null }) =
                     if (error.response.status === 422) {
                         toast.error(error.response.data.details[0].message)
                     } else {
-                        toast.error('Something went wrong')
+                        toast.error('Something went wrong in post')
                     }
                 })
         } else {
@@ -57,7 +57,7 @@ const AddProjectModal = ({ isModalOpen, closeModal, edit = false, id = null }) =
                     if (error.response.status === 422) {
                         toast.error(error.response.data.details[0].message)
                     } else {
-                        toast.error('Something went wrong')
+                        toast.error('Something went wrong put')
                     }
                 })
         }

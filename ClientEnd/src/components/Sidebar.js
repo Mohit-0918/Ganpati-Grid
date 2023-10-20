@@ -24,7 +24,7 @@ const Sidebar = () => {
   }, [])
 
   const projectData = () => {
-    axios.get('http://localhost:3000/project/projects/')
+    axios.get('http://localhost:9000/projects/')
       .then((res) => {
         setProjects(res.data)
       })
