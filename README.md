@@ -98,5 +98,5 @@ This project is licensed under the MIT License.
 ---
 
 **Mohit Sharma**
-- [GitHub](https://github.com/your-username)
-- [LinkedIn](https://www.linkedin.com/in/your-username)
+- [GitHub](https://github.com/Mohit-0918)
+- [LinkedIn](www.linkedin.com/in/mohit-sharma0918)
